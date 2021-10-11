@@ -1,35 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="card">
+    <svg class="bg-pattern" width="350" height="140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <lineargradient x1="50%" y1=".779%" x2="50%" y2="100%" id="c">
+          <stop stop-color="#0989B4" stop-opacity="0" offset="0%" />
+          <stop stop-color="#53FFEE" offset="99.94%" />
+        </lineargradient>
+        <lineargradient x1="50%" y1=".779%" x2="50%" y2="100%" id="d">
+          <stop stop-color="#0989B4" stop-opacity="0" offset="0%" />
+          <stop stop-color="#53FFEE" offset="99.94%" />
+        </lineargradient>
+        <path id="a" d="M0 0h350v140H0z" />
+      </defs>
+      <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+          <use xlink:href="#a" />
+        </mask>
+        <use fill="#41CBD3" xlink:href="#a" />
+        <g mask="url(#b)" opacity=".5">
+          <g transform="translate(-11 -4)">
+            <ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834" />
+          </g>
+          <g transform="translate(-11 91.63)">
+            <ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834" />
+          </g>
+          <g transform="translate(-11 43.815)">
+            <ellipse fill="url(#c)" transform="rotate(-90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" cx="14.834" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#c)" transform="rotate(-90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" cx="197.411" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834" />
+          </g>
+          <g transform="translate(11.822 18.77)">
+            <ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834" />
+          </g>
+          <g transform="translate(11.822 114.4)">
+            <ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834" />
+          </g>
+          <g transform="translate(11.822 66.585)">
+            <ellipse fill="url(#c)" transform="rotate(-90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" cx="14.834" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#c)" transform="rotate(-90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834" />
+            <ellipse fill="url(#d)" cx="197.411" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8" />
+            <ellipse fill="url(#c)" transform="rotate(90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834" />
+          </g>
+        </g>
+      </g>
+    </svg>
+    <div>
+      <img class="avatar" src="https://vk243.github.io/Project-ProfileCard-HTML-CSS/images/image-victor.jpg">
+    </div>
+    <div class="content">
+      <h5>
+        <strong>Victor Crest</strong> <span id="age">26</span>
+        <br>
+        <span id="city">London</span>
+      </h5>
+      <hr>
+      <div class="data">
+        <h6>80K</h6>
+        <p>Followers</p>
+      </div>
+      <div class="data">
+        <h6>803K</h6>
+        <p>Likes</p>
+      </div>
+      <div class="data">
+        <h6>1.4K</h6>
+        <p>Photos</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Haico Paulussen</a>.
+    </div>
   </div>
 </body>
+
 </html>
