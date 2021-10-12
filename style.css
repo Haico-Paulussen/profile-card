@@ -11,17 +11,38 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
   color: hsl(0, 0%, 59%);
+}
+
+body::before{
+  content:"";
+  background-image: url('images/bg-pattern-top.svg');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
   position: absolute;
   z-index: -1;
+  top: -200px;
+  left: -200px;
+  background-repeat: no-repeat;
+}
+
+body::after{
+  content:"";
+  background-image: url('images/bg-pattern-bottom.svg');
+  height: 100%;
+  width: 60%;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  bottom: -400px;
+  right: -200px;
 }
 
 .bg-left{
-  float: clear;
   margin-left: -1000px;
 }
 
 .bg-right{
-  float: clear;
   margin-right: -1000px;
 }
 
