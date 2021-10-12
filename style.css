@@ -11,9 +11,6 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
   color: hsl(0, 0%, 59%);
-}
-
-.bg{
   position: absolute;
   z-index: -1;
 }
@@ -110,7 +107,7 @@ hr {
   color: hsl(228, 45%, 44%);
 }
 
-.footer {
+footer {
   text-align: center;
   position: fixed;
   width: 100%;
