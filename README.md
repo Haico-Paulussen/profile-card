@@ -74,7 +74,9 @@ body::after{
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+The following weeks I want to master the basics of HTML5 and CSS3. I will do this by following tutorials and doing educational games. I also want to use Flexbox and CSS Grid.
+
+Long term speaking, I want to (re-)learn JavaScript; Vue.js, nuxt.js and maybe other framworks.
 
 ## Author
 
