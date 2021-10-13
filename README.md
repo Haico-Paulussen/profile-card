@@ -41,7 +41,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 This is the first frontend programming I did in a while. So this challenge was to learn the basics again. I used little to none recources just to see how far I can come. It was a bit of a shock learning how little I still knew of CSS. But with little help of a colleague I managed to make a decent end result. 
 
-Using the ::before and ::after pseudocode is something i'm really proud of. This was something I never used before. But it turned out to be very helpfull.  
+Using the ::before and ::after pseudo-elements is something i'm really proud of. This was something I never used before. But it turned out to be very helpfull.  
 
 Code snippets i'm proud of:
 
